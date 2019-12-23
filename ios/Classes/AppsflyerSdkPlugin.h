@@ -1,8 +1,7 @@
 #import <Flutter/Flutter.h>
 #import <AppsFlyerLib/AppsFlyerTracker.h>
 
-
-@interface AppsflyerSdkPlugin : NSObject<FlutterPlugin, AppsFlyerTrackerDelegate>
+@interface AppsflyerSdkPlugin: NSObject<FlutterPlugin>
 
 @end
 
@@ -23,6 +22,7 @@
 #define afSuccess                       @"success"
 #define afFailure                       @"failure"
 #define afOnAttributionFailure          @"onAttributionFailure"
+#define afValidatePurchase              @"validatePurchase"
 #define afOnAppOpenAttribution          @"onAppOpenAttribution"
 #define afOnInstallConversionFailure    @"onInstallConversionFailure"
 #define afOnInstallConversionDataLoaded @"onInstallConversionDataLoaded"
